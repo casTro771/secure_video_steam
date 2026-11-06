@@ -1,0 +1,394 @@
+{
+  "warning": "Statistical test results do not establish cryptographic security.",
+  "benchmark": {
+    "bytes": 131072,
+    "chunks": 2,
+    "elapsed_seconds": 0.4169620000029681,
+    "mean_chunk_latency_ms": 208.48100000148406,
+    "throughput_mbps": 2.5147999098060154,
+    "media_bitrate_mbps": 2.0,
+    "headroom_ratio": 1.2573999549030077
+  },
+  "nist_sp800_22": [
+    {
+      "name": "monobit",
+      "status": "passed",
+      "score": 0.9875335610002206,
+      "elapsed_ms": 1.0
+    },
+    {
+      "name": "frequency_within_block",
+      "status": "passed",
+      "score": 0.8449565954261283,
+      "elapsed_ms": 1.0
+    },
+    {
+      "name": "runs",
+      "status": "passed",
+      "score": 0.9859752174982233,
+      "elapsed_ms": 203.0
+    },
+    {
+      "name": "longest_run_ones_in_a_block",
+      "status": "passed",
+      "score": 0.05308335522361607,
+      "elapsed_ms": 102.0
+    },
+    {
+      "name": "binary_matrix_rank",
+      "status": "failed",
+      "score": 0.0,
+      "elapsed_ms": 1205.0
+    },
+    {
+      "name": "dft",
+      "status": "failed",
+      "score": 0.0,
+      "elapsed_ms": 69.0
+    },
+    {
+      "name": "non_overlapping_template_matching",
+      "status": "passed",
+      "score": 0.4581622963994052,
+      "elapsed_ms": 1367.0
+    },
+    {
+      "name": "overlapping_template_matching",
+      "status": "failed",
+      "score": 0.0,
+      "elapsed_ms": 1317.0
+    },
+    {
+      "name": "maurers_universal",
+      "status": "passed",
+      "score": 0.03520682347636214,
+      "elapsed_ms": 549.0
+    },
+    {
+      "name": "linear_complexity",
+      "status": "failed",
+      "score": 0.0,
+      "elapsed_ms": 62960.0
+    },
+    {
+      "name": "serial",
+      "status": "failed",
+      "score": 0.0,
+      "elapsed_ms": 22076.0
+    },
+    {
+      "name": "approximate_entropy",
+      "status": "failed",
+      "score": 0.0,
+      "elapsed_ms": 14707.0
+    },
+    {
+      "name": "cumulative sums",
+      "status": "failed",
+      "score": 0.0,
+      "elapsed_ms": 516.0
+    },
+    {
+      "name": "random_excursion",
+      "status": "failed",
+      "score": 0.630213022379425,
+      "elapsed_ms": 3654.0
+    },
+    {
+      "name": "random_excursion_variant",
+      "status": "failed",
+      "score": 0.0,
+      "elapsed_ms": 17.0
+    }
+  ],
+  "generator_comparison": [
+    {
+      "generator": "lfsr",
+      "throughput_mbps": 2.578244098439831,
+      "nist_sp800_22": [
+        {
+          "name": "monobit",
+          "status": "passed",
+          "score": 0.9875335610002206,
+          "elapsed_ms": 1.0
+        },
+        {
+          "name": "frequency_within_block",
+          "status": "passed",
+          "score": 0.8449565954261283,
+          "elapsed_ms": 0.0
+        },
+        {
+          "name": "runs",
+          "status": "passed",
+          "score": 0.9859752174982233,
+          "elapsed_ms": 203.0
+        },
+        {
+          "name": "longest_run_ones_in_a_block",
+          "status": "passed",
+          "score": 0.05308335522361607,
+          "elapsed_ms": 101.0
+        },
+        {
+          "name": "binary_matrix_rank",
+          "status": "failed",
+          "score": 0.0,
+          "elapsed_ms": 1243.0
+        },
+        {
+          "name": "dft",
+          "status": "failed",
+          "score": 0.0,
+          "elapsed_ms": 75.0
+        },
+        {
+          "name": "non_overlapping_template_matching",
+          "status": "passed",
+          "score": 0.8913564638333725,
+          "elapsed_ms": 1403.0
+        },
+        {
+          "name": "overlapping_template_matching",
+          "status": "failed",
+          "score": 0.0,
+          "elapsed_ms": 1324.0
+        },
+        {
+          "name": "maurers_universal",
+          "status": "passed",
+          "score": 0.03520682347636214,
+          "elapsed_ms": 558.0
+        },
+        {
+          "name": "linear_complexity",
+          "status": "failed",
+          "score": 0.0,
+          "elapsed_ms": 54155.0
+        },
+        {
+          "name": "serial",
+          "status": "failed",
+          "score": 0.0,
+          "elapsed_ms": 22321.0
+        },
+        {
+          "name": "approximate_entropy",
+          "status": "failed",
+          "score": 0.0,
+          "elapsed_ms": 14783.0
+        },
+        {
+          "name": "cumulative sums",
+          "status": "failed",
+          "score": 0.0,
+          "elapsed_ms": 509.0
+        },
+        {
+          "name": "random_excursion",
+          "status": "failed",
+          "score": 0.630213022379425,
+          "elapsed_ms": 3742.0
+        },
+        {
+          "name": "random_excursion_variant",
+          "status": "failed",
+          "score": 0.0,
+          "elapsed_ms": 17.0
+        }
+      ]
+    },
+    {
+      "generator": "nlfsr",
+      "throughput_mbps": 2.073378230537546,
+      "nist_sp800_22": [
+        {
+          "name": "monobit",
+          "status": "passed",
+          "score": 0.17714131538985778,
+          "elapsed_ms": 0.0
+        },
+        {
+          "name": "frequency_within_block",
+          "status": "passed",
+          "score": 1.0,
+          "elapsed_ms": 0.0
+        },
+        {
+          "name": "runs",
+          "status": "passed",
+          "score": 0.019999871449318567,
+          "elapsed_ms": 206.0
+        },
+        {
+          "name": "longest_run_ones_in_a_block",
+          "status": "failed",
+          "score": 8.150493622466324e-07,
+          "elapsed_ms": 101.0
+        },
+        {
+          "name": "binary_matrix_rank",
+          "status": "passed",
+          "score": 0.8864728283106627,
+          "elapsed_ms": 1821.0
+        },
+        {
+          "name": "dft",
+          "status": "failed",
+          "score": 0.0,
+          "elapsed_ms": 73.0
+        },
+        {
+          "name": "non_overlapping_template_matching",
+          "status": "passed",
+          "score": 0.3950890723787993,
+          "elapsed_ms": 1431.0
+        },
+        {
+          "name": "overlapping_template_matching",
+          "status": "failed",
+          "score": 0.0,
+          "elapsed_ms": 1321.0
+        },
+        {
+          "name": "maurers_universal",
+          "status": "failed",
+          "score": 0.009753400362385294,
+          "elapsed_ms": 555.0
+        },
+        {
+          "name": "linear_complexity",
+          "status": "failed",
+          "score": 0.0,
+          "elapsed_ms": 69150.0
+        },
+        {
+          "name": "serial",
+          "status": "failed",
+          "score": 0.0,
+          "elapsed_ms": 22974.0
+        },
+        {
+          "name": "approximate_entropy",
+          "status": "failed",
+          "score": 0.0,
+          "elapsed_ms": 14727.0
+        },
+        {
+          "name": "cumulative sums",
+          "status": "failed",
+          "score": 0.0,
+          "elapsed_ms": 585.0
+        },
+        {
+          "name": "random_excursion",
+          "status": "failed",
+          "score": 0.630213022379425,
+          "elapsed_ms": 3701.0
+        },
+        {
+          "name": "random_excursion_variant",
+          "status": "failed",
+          "score": 0.0,
+          "elapsed_ms": 16.0
+        }
+      ]
+    },
+    {
+      "generator": "geffe",
+      "throughput_mbps": 0.9173135657020302,
+      "nist_sp800_22": [
+        {
+          "name": "monobit",
+          "status": "passed",
+          "score": 0.9813012925396509,
+          "elapsed_ms": 1.0
+        },
+        {
+          "name": "frequency_within_block",
+          "status": "passed",
+          "score": 0.04345207599446429,
+          "elapsed_ms": 1.0
+        },
+        {
+          "name": "runs",
+          "status": "passed",
+          "score": 0.9859749797427486,
+          "elapsed_ms": 205.0
+        },
+        {
+          "name": "longest_run_ones_in_a_block",
+          "status": "failed",
+          "score": 2.97101304340468e-06,
+          "elapsed_ms": 101.0
+        },
+        {
+          "name": "binary_matrix_rank",
+          "status": "passed",
+          "score": 0.3530901293264368,
+          "elapsed_ms": 1820.0
+        },
+        {
+          "name": "dft",
+          "status": "failed",
+          "score": 0.0,
+          "elapsed_ms": 69.0
+        },
+        {
+          "name": "non_overlapping_template_matching",
+          "status": "passed",
+          "score": 0.01834496388366613,
+          "elapsed_ms": 1403.0
+        },
+        {
+          "name": "overlapping_template_matching",
+          "status": "failed",
+          "score": 0.0,
+          "elapsed_ms": 1318.0
+        },
+        {
+          "name": "maurers_universal",
+          "status": "failed",
+          "score": 0.009812753260530169,
+          "elapsed_ms": 561.0
+        },
+        {
+          "name": "linear_complexity",
+          "status": "failed",
+          "score": 0.0,
+          "elapsed_ms": 69484.0
+        },
+        {
+          "name": "serial",
+          "status": "failed",
+          "score": 0.0,
+          "elapsed_ms": 22206.0
+        },
+        {
+          "name": "approximate_entropy",
+          "status": "failed",
+          "score": 0.0,
+          "elapsed_ms": 15772.0
+        },
+        {
+          "name": "cumulative sums",
+          "status": "failed",
+          "score": 0.0,
+          "elapsed_ms": 617.0
+        },
+        {
+          "name": "random_excursion",
+          "status": "failed",
+          "score": 0.630213022379425,
+          "elapsed_ms": 3822.0
+        },
+        {
+          "name": "random_excursion_variant",
+          "status": "failed",
+          "score": 0.0,
+          "elapsed_ms": 17.0
+        }
+      ]
+    }
+  ]
+}
